@@ -7,8 +7,8 @@ LEXERS = [item for item in get_all_lexers() if item[1]]
 LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
 STYLE_CHOICES = sorted((item, item) for item in get_all_styles())
 
-#use the requests library to import data from link
-import requests
+#use the requests library to import data from link for the assignment (https://github.com/kennethreitz/requests)
+import requests 
 
 # MedicalData model here: for now just have all fields to be strings
 class MedicalData(models.Model):
